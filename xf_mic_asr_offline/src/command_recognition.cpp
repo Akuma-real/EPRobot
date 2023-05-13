@@ -281,7 +281,7 @@ void voice_words_callback(const std_msgs::String& msg)
         // 生成要发布的消息
 
        std_msgs::Int32 cmd_send_msg;
-	   cmd_send_msg.data = 1;
+	//    cmd_send_msg.data = 1;
 	   cmd_send_pub.publish(cmd_send_msg);
 	   cout<<"[cmd_rec] 好的：小车寻找声源"<<endl;
 
