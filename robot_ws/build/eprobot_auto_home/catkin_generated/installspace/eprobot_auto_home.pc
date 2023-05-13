@@ -1,0 +1,8 @@
+prefix=/home/EPRobot/robot_ws/install
+
+Name: eprobot_auto_home
+Description: Description of eprobot_auto_home
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

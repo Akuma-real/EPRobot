@@ -1,0 +1,8 @@
+prefix=/home/EPRobot/robot_ws/install
+
+Name: eprobot_joy
+Description: Description of eprobot_joy
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lhuanyu_joy
+Requires: 

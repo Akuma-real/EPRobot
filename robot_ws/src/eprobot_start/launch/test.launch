@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find eprobot_start)/launch/EPRobot_camera.launch" />
+	<include file="$(find astra_camera)/launch/astra.launch" />
+	<node name="camera_color" pkg="eprobot_start" type="follower_line.py"/>
+</launch>

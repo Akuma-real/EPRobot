@@ -1,0 +1,4 @@
+<launch>  
+    <node name="talker" pkg="eprobot_start" type="talker.py"/>
+    <node name="listerner" pkg="eprobot_start" type="listener.py" output="screen"/>
+</launch>

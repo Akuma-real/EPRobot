@@ -1,0 +1,8 @@
+prefix=/home/EPRobot/robot_ws/install
+
+Name: huanyubot_description
+Description: Description of huanyubot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

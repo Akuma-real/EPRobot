@@ -1,0 +1,5 @@
+<launch>
+	
+	<node name="open_F1" pkg="eprobot_start" type="F1_demo.py" output="screen" />
+	
+</launch>

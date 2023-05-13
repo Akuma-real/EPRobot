@@ -1,0 +1,3 @@
+<launch>
+	<node name="L1Controller_v2" pkg="simple_navigation_goals" type="plan.cpp" output="screen" />
+</launch>
