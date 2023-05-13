@@ -1,8 +1,0 @@
-prefix=/home/EPRobot/robot_ws/devel
-
-Name: eprobot_joy
-Description: Description of eprobot_joy
-Version: 0.0.0
-Cflags: -I/home/EPRobot/robot_ws/src/eprobot_joy/include
-Libs: -L${prefix}/lib -lhuanyu_joy
-Requires: 

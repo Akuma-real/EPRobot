@@ -1,8 +1,0 @@
-prefix=/home/EPRobot/robot_ws/devel
-
-Name: huanyu_robot_start
-Description: Description of huanyu_robot_start
-Version: 0.0.0
-Cflags: -I/home/EPRobot/robot_ws/src/huanyu_robot_start/include
-Libs: -L${prefix}/lib -lhuanyu_robot_start
-Requires: 

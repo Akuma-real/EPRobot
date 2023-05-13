@@ -1,8 +1,0 @@
-prefix=/home/EPRobot/robot_ws/install
-
-Name: hibot_follower
-Description: Description of hibot_follower
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lhibot_follower
-Requires: 

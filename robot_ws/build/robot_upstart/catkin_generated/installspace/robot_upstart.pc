@@ -1,8 +1,0 @@
-prefix=/home/EPRobot/robot_ws/install
-
-Name: robot_upstart
-Description: Description of robot_upstart
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
