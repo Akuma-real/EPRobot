@@ -44,13 +44,13 @@ class MoveBaseSquare():
         waypoints.append(Pose(Point(-1.193, 1.834, -1.632), quaternions[5]))  # //话题pick发5到取药口2
         waypoints.append(Pose(Point(-1.996, 2.212, -1.521), quaternions[6]))  # //话题pick发6到取药口1
 
-        waypoints.append(Pose(Point(-0.433, -0.220, -0.053), quaternions[7]))    #起点  有效
+        waypoints.append(Pose(Point(-0.387, -0.348, -0.019), quaternions[7]))    #起点  有效
         waypoints.append(Pose(Point(-0.321, 3.735, 3.082), quaternions[8]))   # //答题区
 
         waypoints.append(Pose(Point(0.606, -0.043, 1.035), quaternions[9]))   # //第1个衔接点
         waypoints.append(Pose(Point(0.954, 3.328, 2.667), quaternions[10]))  # //第2个衔接点
-        waypoints.append(Pose(Point(-1.226, 3.744, -3.121), quaternions[11]))   # //第3个衔接点
-        waypoints.append(Pose(Point(-1.300, -0.079, -0.040), quaternions[12]))   # //第4个衔接点
+        waypoints.append(Pose(Point(-1.410, 3.416, -2.291), quaternions[11]))   # //第3个衔接点
+        waypoints.append(Pose(Point(-0.974, -0.054, -0.929), quaternions[12]))   # //第4个衔接点
 
 
         # Publisher to manually control the robot (e.g. to stop it)
@@ -114,8 +114,7 @@ class MoveBaseSquare():
                 # Set the time stamp to "now"
                 # 设置时间戳
                 goal.target_pose.header.stamp = rospy.Time.now()
-                # goal.target_pose.pose = waypoints[self.i]   #配药区
-                goal.target_pose.pose = waypoints[1]
+                goal.target_pose.pose = waypoints[self.i]   #配药区
                 # Start the robot moving toward the goal
                 # 机器人移动
                 if (self.move(goal) == True):
@@ -191,8 +190,7 @@ class MoveBaseSquare():
                 # Set the time stamp to "now"
                 # 设置时间戳
                 goal.target_pose.header.stamp = rospy.Time.now()
-                # goal.target_pose.pose = waypoints[self.j]  # 取药区
-                goal.target_pose.pose = waypoints[4]
+                goal.target_pose.pose = waypoints[self.j]  # 取药区
                 # Start the robot moving toward the goal
                 # 机器人移动
                 if (self.move(goal) == True):

@@ -165,14 +165,14 @@ int business_proc_callback(business_msg_t businessMsg)
 			int len = PCM_MSG_LEN;
 			char *pcm_buffer = new char[len]; //在堆中创建空间
 #if whether_print_log
-			if (pcm_buffer == NULL)
-			{
-				cout << "[voice_control] -- buffer is null" << endl;
-			}
-			else
-			{
-				cout << "[voice_control] -- buffer alloced successfully" << endl;
-			}
+			//if (pcm_buffer == NULL)
+			//{
+				//cout << "[voice_control] -- buffer is null" << endl;
+			//}
+			//else
+			//{
+				//cout << "[voice_control] -- buffer alloced successfully" << endl;
+			//}
 			//cout << "data size:" << businessMsg.length << "len:" << len << endl;
 #endif
 			try

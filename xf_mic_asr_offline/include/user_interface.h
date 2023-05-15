@@ -4,7 +4,7 @@
 #include <string>
 #include "asr_offline_record_sample.h"
 /***************************参数配置区域，用户可通过修改这些词来进行 ********************************/
-#define whether_print_log 1 //是否打印log
+#define whether_print_log 0 //是否打印log
 #define TIMEOUT 10 //在客户端获取服务端结果时，超时时间
 
 /******麦克风基础功能参数******/
@@ -25,7 +25,7 @@ char *SYSTEM_CONFIG_PATH = (char*)"/tmp/config.txt";
 
 /******与离线命令词识别相关参数******/
 std::string source_path = "";
-std::string appid="333c3c12";
+std::string appid="";
 char *ASR_RES_PATH = (char*)"/config/msc/res/asr/common.jet"; //离线语法识别资源路径，重要，与麦克风及appid绑定
 char *GRM_BUILD_PATH = (char*)"/config/msc/res/asr/GrmBuilld";   //构建离线语法识别网络生成数据保存路径
 char *GRM_FILE = (char*)"/config/call.bnf";					//构建离线识别语法网络所用的语法文件，用户自修改文件

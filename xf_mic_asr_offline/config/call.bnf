@@ -1,4 +1,4 @@
-﻿﻿#BNF+IAT 1.0 UTF-8;
+#BNF+IAT 1.0 UTF-8;
 !grammar call;
 
 !slot <action>;
@@ -8,5 +8,5 @@
 <callstart>:小车<choose>;
 <choose>:<action>|<navigation>|<turn>;
 <action>:前进|后退|停|过来|休眠;
-<navigation>:去(I|J|K|O|P|Q)点;
+<navigation>:去(A1|A2|A3|A4|B1|B2|B3|B4|C1|C2|C3|C4)点;
 <turn>:(左|右)转;

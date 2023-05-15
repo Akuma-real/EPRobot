@@ -17,7 +17,7 @@ def pick_up_num():
         # 发布消息
         rospy.sleep(5)
         pub.publish(msg1)
-        rospy.signal_shutdown("接收到取药点数据")
+        #rospy.signal_shutdown("接收到取药点数据")
         rate.sleep()
 
 

@@ -17,7 +17,7 @@ def dispense_window():
     # 发布消息
         rospy.sleep(5)
         dispense_pub.publish(msg)
-        rospy.signal_shutdown("接收到配药窗口数据")
+        #rospy.signal_shutdown("接收到配药窗口数据")
         rate.sleep()
 
 if __name__ == '__main__':
